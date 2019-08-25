@@ -2,14 +2,21 @@
   "name": "vue01",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://guissy.github.io/chart02",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "chart.js": "^2.8.0",
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "dayjs": "^1.8.15",
+    "mockjs": "^1.0.1-beta3",
+    "vue": "^2.6.10",
+    "vue-chartjs": "^3.4.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
