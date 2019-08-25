@@ -85,8 +85,8 @@
           datasets: [
             {
               label: '',
-              borderWidth: 1,
-              // borderColor: ['#01ccfe', 'transparent', 'transparent'],
+              borderWidth: 0,
+              // borderColor: ['#e54df8', '#01ccfe', '#02ffd0', '#e1c97e'],
               backgroundColor: ['#e54df8', '#01ccfe', '#02ffd0', '#e1c97e'],
               data: data4.map(v => v.value),
               weight: 1,
@@ -95,7 +95,6 @@
         },
         chartData2: {
           labels: data2.map(v => v.name),
-      // { 'notice': '家校通知', 'homework': '课后作业', 'class': '班级动态', 'grow': '成长记录' }
           datasets: [
             {
               label: '家校通知',
