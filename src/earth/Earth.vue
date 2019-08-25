@@ -1,5 +1,5 @@
 <template>
-  <div style="padding: 65px 0 80px 0; background: transparent url(./bg.png) left top repeat; background-size: 6px 6px; position: relative">
+  <div :style="'padding: 65px 0 80px 0; background: transparent url('+bg+') left top repeat; background-size: 6px 6px; position: relative'">
   <div class="line1">
     <div class="line2"></div>
     <div class="line3"></div>
@@ -72,7 +72,14 @@
 import Light from './Light';
 import DoubleLightButton from './DoubleLightButton';
 import TripleLightButton from './TripleLightButton';
+import bg from './bg.png';
+
 export default {
+  data() {
+    return {
+      bg
+    }
+  },
   components: {
     DoubleLightButton,
     TripleLightButton,
