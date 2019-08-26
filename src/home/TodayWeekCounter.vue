@@ -40,7 +40,7 @@
         </ul>
         <div class="week-normal-rate">
             <h3>一周考勤正常率</h3>
-            <LineChart :width="410" :height="150" :chart-data="chartData">
+            <LineChart :width="410" :height="130" :chart-data="chartData">
             </LineChart>
         </div>
     </section>
@@ -124,23 +124,37 @@
 
     ul.today-user-daily {
         width: 415px;
-        padding: 10px;
+        padding: 0 14px 10px;
+        font-size: 12px;
     }
 
     ul.today-user-daily li {
         display: inline-flex;
         width: 180px;
         margin: 20px 10px 0 0;
+        border-bottom: 1px dashed #4b6286;
+        height: 26px;
     }
 
     ul.today-user-daily .user-10 {
         margin-left: 10px;
         display: inline-block;
         min-width: 80px;
+        margin-bottom: 2px;
+    }
+
+    ul.today-user-daily .label {
+        vertical-align: middle;
+        display: inline-block;
+        line-height: 18px;
     }
 
     ul.today-user-daily .user-one {
-        width: 10px;
+        width: 11px;
+        height: 18px;
+        vertical-align: middle;
+        display: inline-block;
+        line-height: 0;
     }
 
     ul.today-user-daily .user-num {
@@ -152,7 +166,8 @@
 
     /* -------- 一周考勤正常率 -------- */
     .week-normal-rate h3 {
-        color: #fff;
+        margin: 10px 12px;
+        color: #25d8f3;
         font-size: 12px;
     }
 

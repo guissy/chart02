@@ -49,7 +49,7 @@
                 <h4>家校互动类型占比</h4>
                 <PieChart
                         :chart-data="chartData"
-                        style="width: 140px; height: 120px; margin-left: -8px; margin-top: 20px;" />
+                        style="width: 140px; height: 120px; margin-left: 2px; margin-top: 20px;" />
             </div>
         </section>
     </section>
@@ -234,7 +234,7 @@
     }
     .school-parent-card h4 {
         padding-left: 10px;
-        color: #2b89a8;
+        color: #25d8f3;
     }
     .school-parent-card dl {
         padding-left: 10px;

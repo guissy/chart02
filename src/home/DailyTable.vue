@@ -68,7 +68,7 @@
         text-align: center;
     }
     table.every-class th {
-        color: #2b89a8;
+        color: #25d8f3;
         line-height: 36px;
     }
     table.every-class .grade-name {

@@ -184,6 +184,7 @@
 
     .school-safe h4 {
         padding: 10px 0 5px;
+        color: #25d8f3;
     }
 
     .school-safe > *:nth-child(2) {
