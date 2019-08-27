@@ -47,12 +47,13 @@
         color: #fff;
         padding: 5px;
         border: 1px solid #4b6286;
-        text-shadow: 0px 0px 4px #fff;
+        text-shadow: 0 0 4px #fff;
         text-indent: 10px;
     }
 
     .live-event-wrap {
         margin-left: 15px;
+        margin-top: 15px;
     }
     ul.live-event {
         height: 240px;

@@ -1,6 +1,7 @@
 <template>
     <header class="App-header">
         <span class="App-header-time">
+            <img class="App-header-clock" src="../assets/clock.png"/>
           <span class="App-header-week">{{format('dddd')}}</span>
           <time class="App-header-now">{{format('YYYY/MM/DD hh:mm')}}</time>
         </span>
@@ -27,19 +28,30 @@
         display: flex;
         align-content: center;
     }
+
     .App-header-time {
+        vertical-align: middle;
         margin-left: 15px;
         width: 268px;
         font-size: 14px;
     }
 
+    .App-header-clock {
+        display: inline-block;
+        padding-right: 10px;
+        height: 30px;
+        vertical-align: middle;
+    }
+
     .App-header-week {
+        vertical-align: middle;
         font-size: 20px;
         margin-right: 10px;
         line-height: 50px;
     }
 
     .App-header-now {
+        vertical-align: sub;
     }
 
     .App-header-title {

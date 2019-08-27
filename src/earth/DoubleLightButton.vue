@@ -1,11 +1,12 @@
 <template>
-    <div class="light-btn">
+    <div class="light-btn" :title="text" ref="lightBtn">
         <span class="label">{{text}}</span>
         <span class="num">{{value}}</span>
     </div>
 </template>
 <script>
   export default {
+    inheritAttrs: false,
     props: {
       text: {
         type: String,
@@ -14,8 +15,21 @@
       value: {
         type: String,
         default: ''
-      }
+      },
     },
+    mounted() {
+      if (this.$refs.lightBtn) {
+        const style = document.createElement('style');
+        style.innerHTML = `
+    .light-btn[title=${this.text}]::before,
+    .light-btn[title=${this.text}]::after {
+        transform: ${this.$refs.lightBtn.style.transform};
+    }
+      `;
+        document.documentElement.appendChild(style);
+        this.$refs.lightBtn.style.transform = 'none';
+      }
+    }
   }
 </script>
 <style scoped>
@@ -36,6 +50,7 @@
         box-shadow: inset 0 0 10px #4d83d5;
         z-index: 0;
         pointer-events: none;
+        transition: filter 0.2s;
     }
 
     .light-btn::after {
@@ -43,6 +58,11 @@
         left: 10%;
         width: 80%;
         height: 80%;
+    }
+
+    .light-btn:hover::before,
+    .light-btn:hover::after {
+        filter: contrast(1.5) brightness(1.8) hue-rotate(10deg);
     }
 
     .light-btn > .label {
@@ -68,9 +88,13 @@
 
     .light-btn:hover > .label {
         font-weight: 900;
+        text-shadow: 0 0px 1px #fff;
+        width: 90px;
+        letter-spacing: 1px;
+        margin-left: -4px;
     }
-
     .light-btn:hover > .num {
-        font-size: 22px;
+        font-weight: 900;
+        transform: scale(1.1);
     }
 </style>

@@ -40,7 +40,7 @@
         </ul>
         <div class="week-normal-rate">
             <h3>一周考勤正常率</h3>
-            <LineChart :width="410" :height="130" :chart-data="chartData">
+            <LineChart :width="402" :height="130" :chart-data="chartData" style="margin-left: 8px;">
             </LineChart>
         </div>
     </section>
@@ -84,6 +84,11 @@
               }
             },
             scales: {
+              xAxes: [{
+                ticks: {
+                  fontSize: 10,
+                }
+              }],
               yAxes: [{
                 gridLines: {
                   display: true,

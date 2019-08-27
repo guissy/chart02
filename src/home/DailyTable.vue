@@ -49,6 +49,7 @@
     /* -------- 各班考勤统计 -------- */
     .every-class-wrap {
         margin-left: 12px;
+        margin-top: 15px;
         width: 402px;
         border: 1px solid #4b6286;
         color: #fff;

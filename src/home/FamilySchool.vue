@@ -245,11 +245,13 @@
     .school-parent-card .num {
         display: inline-block;
         margin-top: 10px;
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 18px;
         color: #25d8f3;
         width: 110px;
         text-align: right;
-        text-shadow: 0 0 6px #b2dbff;
+        text-shadow: 0 0 2px #72ecff;
+        font-family: entsans;
     }
 
 

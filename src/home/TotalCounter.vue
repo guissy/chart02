@@ -40,6 +40,8 @@
         margin-top: 10px;
         font-size: 22px;
         color: #25d8f3;
-        text-shadow: 0 0 6px #b2dbff;
+        text-shadow: 0 0 4px #72ecff;
+        font-family: entsans;
+        letter-spacing: 2px;
     }
 </style>

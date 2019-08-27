@@ -163,6 +163,7 @@
 <style scoped>
     .school-safe-wrap {
         margin-left: 12px;
+        margin-top: 15px;
         width: 427px;
         border: 1px solid #4b6286;
         color: #fff;
