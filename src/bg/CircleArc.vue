@@ -8,6 +8,8 @@
             <div v-for="v of 14" :key="v" class="rect1" :style="{transform: 'translateX(49px) rotate('+v*12+'deg)'}"></div>
             <div class="arc5"></div>
         </div>
+        <img src="../assets/line3.svg"/>
+        <img src="../assets/line3.svg" class="right"/>
     </div>
 </template>
 
@@ -20,7 +22,8 @@
 <style scoped>
 
     .arc-box {
-        position: relative;
+        position: absolute;
+        width: 100%;
     }
     .arc-wrap {
         position: absolute;
@@ -71,5 +74,17 @@
         top: 40px;
         left: 40px;
         transform-origin: -49px 0;
+    }
+    .arc-box img {
+        position: absolute;
+        top: 52px;
+        width: 265px;
+    }
+    .arc-box img.right {
+        position: absolute;
+        top: 52px;
+        right: 0;
+        width: 265px;
+        transform: scaleX(-1);
     }
 </style>

@@ -35,6 +35,7 @@
     }
 
     .App-header-time {
+        margin-top: 6px;
         vertical-align: middle;
         margin-left: 15px;
         width: 268px;
@@ -63,14 +64,19 @@
     .App-header-title {
         flex: 1;
         display: inline-block;
-        margin: 10px 0;
+        margin: 8px 0;
+        height: 66px;
         text-align: center;
         color: #cbf6fe;
         font-size: 30px;
         text-shadow: 0 0 4px #b2dbff;
+        background: url(../assets/header_bg.png) no-repeat center 30px;
+        background-size: 80%;
     }
 
     .App-header-weather {
+        margin-top: 10px;
+        padding-left: 10px;
         line-height: 50px;
         width: 268px;
         font-size: 16px;
