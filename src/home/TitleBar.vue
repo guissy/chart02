@@ -1,5 +1,6 @@
 <template>
     <header class="App-header">
+        <CircleArc />
         <span class="App-header-time">
             <img class="App-header-clock" src="../assets/clock.png"/>
           <span class="App-header-week">{{format('dddd')}}</span>
@@ -14,12 +15,16 @@
 </template>
 <script>
   import Dayjs from 'dayjs';
+  import CircleArc from "@/bg/CircleArc";
 
   export default {
     methods: {
       format: function (fmt) {
         return Dayjs(Date.now()).format(fmt);
       }
+    },
+    components: {
+      CircleArc
     }
   }
 </script>
@@ -34,6 +39,7 @@
         margin-left: 15px;
         width: 268px;
         font-size: 14px;
+        z-index: 10;
     }
 
     .App-header-clock {
