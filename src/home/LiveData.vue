@@ -50,6 +50,14 @@
         text-shadow: 0 0 4px #fff;
         text-indent: 10px;
     }
+    .live-event-title::before {
+        content: '';
+        display: inline-block;
+        border: 2px solid #00dbfd;
+        border-radius: 50%;
+        transform: translate(-5px, -3px);
+        box-shadow: 0 0 4px #73eafd, 0 0 8px #fff;
+    }
 
     .live-event-wrap {
         margin-left: 15px;

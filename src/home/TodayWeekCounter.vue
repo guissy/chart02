@@ -126,6 +126,14 @@
         text-shadow: 0 0 4px #fff;
         text-indent: 10px;
     }
+    .today-user-daily-title::before {
+        content: '';
+        display: inline-block;
+        border: 2px solid #00dbfd;
+        border-radius: 50%;
+        transform: translate(-5px, -3px);
+        box-shadow: 0 0 4px #73eafd, 0 0 8px #fff;
+    }
 
     ul.today-user-daily {
         width: 415px;
@@ -174,14 +182,5 @@
         margin: 10px 12px;
         color: #25d8f3;
         font-size: 12px;
-    }
-
-    .today-user-daily-title {
-        font-size: 14px;
-        color: #fff;
-        padding: 5px;
-        border: 1px solid #4b6286;
-        text-shadow: 0 0 4px #fff;
-        text-indent: 10px;
     }
 </style>
