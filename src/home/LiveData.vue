@@ -46,7 +46,7 @@
         font-size: 14px;
         color: #fff;
         padding: 5px;
-        border: 1px solid #4b6286;
+        border-bottom: 1px solid #4b6286;
         text-shadow: 0 0 4px #fff;
         text-indent: 10px;
     }
@@ -62,12 +62,12 @@
     .live-event-wrap {
         margin-left: 15px;
         margin-top: 15px;
+        border: 1px solid #4b6286;
     }
     ul.live-event {
         height: 240px;
         overflow: scroll;
         position: relative;
-        border: 1px solid #4b6286;
     }
     ul.live-event::after {
         display: block;
