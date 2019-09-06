@@ -95,7 +95,7 @@
     }
 
     .App {
-        background: #030b30;
+        background: #030b30 radial-gradient(#174c9a, #050b2f 65%);
         color: #fff;
     }
 
