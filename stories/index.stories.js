@@ -1,5 +1,4 @@
 import {storiesOf} from '@storybook/vue';
-// import { linkTo } from '@storybook/addon-links';
 import CircleArc from '../src/bg/CircleArc';
 import NiceLine from '../src/bg/NiceLine';
 import DotLight from '../src/earth/DotLight';
@@ -7,7 +6,6 @@ import DotLightLow from '../src/earth/DotLightLow';
 import DoubleLightButton from '../src/earth/DoubleLightButton';
 import Earth from '../src/earth/Earth';
 import Light from '../src/earth/Light';
-import Line from '../src/earth/LineArc';
 import TripleLightButton from '../src/earth/TripleLightButton';
 import {themes} from '@storybook/theming';
 
